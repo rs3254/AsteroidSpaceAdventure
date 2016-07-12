@@ -123,7 +123,7 @@ float HighScoreTime;
     smallAsteroid4 = [self createSmallAsteroid:self.scene.size.width/1.5 position:self.scene.size.height*2.2 name:@"smallAsteroid4"];
     [self addChild:smallAsteroid4];
     
-    
+    // Set category bit masks and contact bit masks 
     self.asteroid1.physicsBody.categoryBitMask = AsteroidCategory;
     self.asteroid1.physicsBody.contactTestBitMask = spaceShipCategory | plasmaCategory;
     
